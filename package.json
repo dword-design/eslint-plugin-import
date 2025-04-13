@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-import",
-  "version": "2.31.0",
+  "name": "@dword-design/eslint-plugin-import",
+  "version": "0.1.0",
   "description": "Import with sanity.",
   "engines": {
     "node": ">=4"
@@ -38,7 +38,7 @@
     "test-example:flat": "cd examples/flat && npm install && npm run lint",
     "test-example:v9": "cd examples/v9 && npm install && npm run lint",
     "test-types": "npx --package typescript@latest tsc --noEmit index.d.ts",
-    "prepublishOnly": "safe-publish-latest && npm run build",
+    "prepublishOnly": "npm run build",
     "prepublish": "not-in-publish || npm run prepublishOnly",
     "preupdate:eslint-docs": "npm run build",
     "update:eslint-docs": "eslint-doc-generator --rule-doc-title-format prefix-name --rule-doc-section-options false --rule-list-split meta.docs.category --ignore-config stage-0 --config-emoji recommended,☑️"
